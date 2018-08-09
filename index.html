@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>分页测试</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	
+  	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <div ng-app="myApp" ng-controller="myCtrl">
+    	<table class="table table-striped">
+			<thead>
+				<tr>
+					<th class="col-md-2">name</th>
+					<th class="col-md-2">age</th>
+					<th class="col-md-2">sex</th>
+				</tr>
+			</thead>
+			<tbody ng-repeat = "row in tableData ">
+				<tr>
+					<td>{{row.name}}</td>
+					<td>{{row.age}}</td>
+					<td>{{row.sex}}</td>
+				</tr>
+			</tbody>
+    	</table>
+    	<my-pagination></my-pagination>
+    </div>
+    
+</body>
+</html>

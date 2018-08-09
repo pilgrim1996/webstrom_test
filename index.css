@@ -1,0 +1,13 @@
+li{
+	margin-right: 5px;
+	float: left;
+	line-height: 34px;
+}
+tr td,th{
+	text-align: center;
+}
+input{
+	height: 30px;
+	width: 72px;
+	margin-right: 5px;
+}
